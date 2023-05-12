@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="portfolio-container">
+            <div class="portfolio-row header-wrap">
+                <div class="brand-name">
+                    <a href="#" class="logo">Анастасия Головачева</a>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>                   
+                </div>
+                <div class="portfolio-navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакт</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <selection id="slide-carousel">
+        <div class="slider">
+            <div class="portfolio-container">
+                <div class="slider-content">
+                    <div class="slider-general">
+                        <span class="welcome-msg">
+                            Добро пожаловать!
+                        </span>
+                        <div class="welcome-text">
+                            <h1>
+                                Привет! Меня зовут
+                            </h1>
+                            <div class="text-wrap">
+                                <h2 class="main-title">Головачева Анастасия</h2>
+                                <h2 class="hover-title">Головачева Анастасия</h2>
+                            </div>
+                            <p>
+                                Тут должен быть текст: кратко о себе и скиллах в тестировании
+                            </p>
+                            <div class="dowload-resume">
+                                <a href="Файл с резюме в pdf" target="_blank">
+                                    Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-image">
+                        <div class="welcome-image">
+                            <img src="C:\Users\nek2k\Desktop\CVm\Welcome.jpg" alt="Мое фото">
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </selection>
+    <selection id="contact">
+        <div class="contact-portfolio">
+            <div class="text-wrap">
+                <h2 class="main-title">Контакты</h2>
+                <h2 class="hover-title">Контакты</h2>
+            </div>
+            <div class="contact-info">
+                <span>
+                    Москва
+                </span>
+                <h3>
+                    <a href="anastasiavgolovacheva@gmail.com">e-mail</a>
+                </h3>
+                <a href="#">
+                    +7 (906) 6229306
+                </a>
+            </div>
+            <div class="social-link">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">VK</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">что-то ещё</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </selection>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click",function(){
+            document.querySelector(".portfolio-navbar").classList.toggle("show");
+        })
+    </script>
+    
+</body>
+</html>
